@@ -37,9 +37,9 @@ Route::group(['prefix' => config('shopify-app.prefix'), 'middleware' => ['web']]
     */
 
     Route::get(
-        '/login',
+        '/install',
         'OhMyBrew\ShopifyApp\Controllers\AuthController@index'
-    )->name('login');
+    )->name('install');
 
     /*
     |--------------------------------------------------------------------------

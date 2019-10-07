@@ -24,7 +24,7 @@ abstract class BaseException extends Exception
     {
         if (!Config::get('shopify-app.debug')) {
             // If not in debug mode... show view
-            return Redirect::route('login')->with('error', $this->getMessage());
+            return Redirect::route('install')->with('error', $this->getMessage());
         }
     }
 }
